@@ -1,0 +1,303 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    background: black;
+  }
+  body #navbar {
+    top: 0;
+    width: 100%;
+    
+  }
+  
+  body #navbar ul {
+    margin: 0;
+    color: white;
+    display: flex;
+    background: black;
+    justify-content: flex-end;
+    
+  }
+  
+  body #navbar ul li {
+    margin: 20px 20px;
+    list-style-type: none;
+    
+  }
+body #navbar ul li a{
+    color: white;
+}
+body #navbar ul li a:hover{
+    color: red;
+}
+
+
+
+body main #welcome-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.37)),
+      url("./image/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+  }
+  
+  body main #welcome-section .welcome-contents {
+    color: white;
+    margin: 0.1%;
+    min-height: 70vh;
+    padding-top: 30vh;
+    font-size: 1.3em;
+    text-align: center;
+  }
+  
+  body main #welcome-section .welcome-contents h1 {
+    font-size: 3em;
+  }
+  
+  body main #welcome-section .welcome-contents div {
+    font-size: 1.5em;
+  }
+  .about-container{
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    background-color: #c9c5c5;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  
+  }
+  .about-text{
+    
+    margin: auto;
+  }
+  .about-text p:nth-child(1){
+    color: #403e3e;
+    font-weight: bold;
+    font-size: 23px;
+  }
+  .about-text p:nth-child(2){
+    color: #3e3d3d;
+    font-size: 13px;
+    font-weight: bold;
+
+  }
+  .about-text button{
+    width: 120px;
+    height: 40px;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    background-color: #262525;
+  }
+  button:active{
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 600px) {
+      body main #welcome-section .welcome-contents {
+      font-size: 1.1em;
+    }
+    
+  }
+  body main #galary{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.37)),
+      url("./image/background2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .galary-tittle{
+    color: black;
+    font-size: 2.5em;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  .galary-container{
+    box-sizing: border-box;
+  }
+
+  
+
+  /** {box-sizing:border-box}*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+body main #projects{
+  background: #c7c4c4;
+}
+
+body main #projects .project-title{
+  color: black;
+  font-size: 2em;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+
+
+
+body main #projects .project-container{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 30px;
+  justify-content: center;
+  
+
+}
+
+body main #projects .project-tile{
+  border: 2px solid white;
+  margin: 20px;
+  background-color: rgb(83, 80, 80);
+}
+body main #projects .project-container .project-tile-image img{
+  width: 500px;
+  height: 300px;
+}
+body main #projects .project-container .project-tile-link {
+  text-align: center;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  
+}
+body main #projects .project-container .project-tile-link a{
+  color: white;
+  text-decoration: none;
+}
+
+@media(max-width: 550px){
+  body main #projects .project-container .project-tile-image img{
+
+    width: 250px;
+    height: 150px;
+  }
+}
+
+body main #contact{
+  margin: 1px 0;
+  background: rgb(201, 200, 200);
+}
+body main #contact .contact-header{
+  color: black;
+  font-size: 2em;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+}
+
+body main #contact .contact-me{
+  display: flex;
+  justify-content: space-between;
+  margin:20px ;
+}
+body main #contact .comtact-me-link a img{
+  width: 50px;
+  
+}
+@media (max-width: 600px){
+  body main #contact .comtact-me-link a img{
+    width: 30px;
+  }
+}
+
+body footer{
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
